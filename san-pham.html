@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sản phẩm | Thuần Chay</title>
+<meta name="description" content="Toàn bộ sản phẩm thuần thực vật của Thuần Chay: Mật Táo Đỏ Tâm An, Bột Đậu Hạt Rau Củ, Bột Nêm Thuần Chay.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+
+<div data-partial="header"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><span>Sản phẩm</span></div>
+    <h1>Toàn bộ sản phẩm</h1>
+    <p>Mật táo đỏ, bột đậu hạt rau củ và gia vị nêm — thuần tự nhiên, không chất bảo quản.</p>
+  </div>
+</section>
+
+<section class="section--tight">
+  <div class="container">
+    <div class="shop-layout">
+      <aside>
+        <div class="filter-box">
+          <h4>Tìm kiếm</h4>
+          <input type="search" data-search placeholder="Tên sản phẩm..." style="width:100%; padding:11px 14px; border-radius:999px; border:1px solid var(--line); background:var(--paper-2);">
+        </div>
+        <div class="filter-box">
+          <h4>Danh mục</h4>
+          <div class="filter-list">
+            <label><input type="checkbox" data-cat-filter value="Mật Táo Đỏ"> Mật Táo Đỏ Tâm An</label>
+            <label><input type="checkbox" data-cat-filter value="Bột Đậu Hạt Rau Củ"> Bột Đậu Hạt Rau Củ</label>
+            <label><input type="checkbox" data-cat-filter value="Bột Nêm Thuần Chay"> Bột Nêm Thuần Chay</label>
+          </div>
+        </div>
+        <div class="filter-box">
+          <h4>Cam kết</h4>
+          <div class="filter-list" style="color:var(--charcoal-soft); font-size:14px; display:flex; flex-direction:column; gap:10px;">
+            <span>✓ Không chất bảo quản</span>
+            <span>✓ Không hương liệu hoá học</span>
+            <span>✓ Giao hàng toàn quốc</span>
+          </div>
+        </div>
+      </aside>
+
+      <div>
+        <div class="shop-toolbar">
+          <span style="color:var(--charcoal-soft); font-size:14.5px;"><strong data-shop-count>0</strong> sản phẩm</span>
+          <select data-sort>
+            <option value="default">Sắp xếp: Nổi bật</option>
+            <option value="price-asc">Giá: Thấp đến cao</option>
+            <option value="price-desc">Giá: Cao đến thấp</option>
+            <option value="rating">Đánh giá cao nhất</option>
+          </select>
+        </div>
+        <div class="product-grid" data-shop-grid></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Không tìm thấy sản phẩm phù hợp?</h2>
+    <a href="lien-he.html" class="btn" style="background:var(--ink); color:var(--paper);">Liên hệ tư vấn miễn phí</a>
+  </div>
+</section>
+
+<div data-partial="footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

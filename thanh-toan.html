@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thanh toán | Thuần Chay</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+
+<div data-partial="header"></div>
+
+<section class="page-hero" style="padding:44px 0;">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><span>Thanh toán</span></div>
+    <h1>Hoàn tất đơn hàng</h1>
+    <p>Xem lại giỏ hàng và điền thông tin giao hàng.</p>
+  </div>
+</section>
+
+<section class="section--tight">
+  <div class="container contact-layout">
+    <form class="contact-form" data-contact-form>
+      <div class="field"><label>Họ và tên *</label><input type="text" required placeholder="Nguyễn Văn A"></div>
+      <div class="field"><label>Số điện thoại *</label><input type="tel" required placeholder="09xxxxxxxx"></div>
+      <div class="field"><label>Địa chỉ giao hàng *</label><input type="text" required placeholder="Số nhà, đường, phường/xã, tỉnh/thành"></div>
+      <div class="field"><label>Ghi chú</label><textarea rows="4" placeholder="Ghi chú cho đơn hàng (tuỳ chọn)"></textarea></div>
+      <button class="btn btn-gold btn-block" type="submit">Đặt hàng (COD)</button>
+      <p style="font-size:13px; color:var(--charcoal-soft); text-align:center;">Đây là trang minh hoạ — kết nối cổng thanh toán thật xem README mục "Kết nối backend".</p>
+    </form>
+
+    <div class="contact-info-card" style="background:var(--paper-3); color:var(--charcoal); border:1px solid var(--line);">
+      <h3 style="color:var(--ink);">Đơn hàng của bạn</h3>
+      <div class="cart-drawer__items" style="padding:0; max-height:none;"></div>
+      <div class="cart-drawer__total" style="margin-top:20px; padding-top:16px; border-top:1px solid var(--line);"><span>Tổng cộng</span><span>0đ</span></div>
+    </div>
+  </div>
+</section>
+
+<div data-partial="footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // reuse the drawer renderer for the on-page order summary too
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      const drawerItems = document.querySelector(".cart-drawer .cart-drawer__items");
+      const pageItems = document.querySelector(".section--tight .cart-drawer__items");
+      const drawerTotal = document.querySelector(".cart-drawer .cart-drawer__total span:last-child");
+      const pageTotal = document.querySelector(".section--tight .cart-drawer__total span:last-child");
+      if (drawerItems && pageItems) pageItems.innerHTML = drawerItems.innerHTML;
+      if (drawerTotal && pageTotal) pageTotal.textContent = drawerTotal.textContent;
+    }, 100);
+  });
+</script>
+</body>
+</html>

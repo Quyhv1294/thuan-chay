@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chi tiết sản phẩm | Thuần Chay</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+
+<div data-partial="header"></div>
+
+<section class="page-hero" style="padding:36px 0;">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><a href="san-pham.html">Sản phẩm</a><span>/</span><span data-pd-breadcrumb>...</span></div>
+  </div>
+</section>
+
+<section class="section--tight" data-product-detail>
+  <div class="container">
+    <div class="pd-layout">
+      <div class="pd-gallery">
+        <div class="pd-gallery__main">
+          <span class="pd-badge" data-pd-badge hidden></span>
+          <a class="pd-zoom" data-pd-zoom target="_blank" rel="noopener" aria-label="Phóng to ảnh">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          </a>
+          <img data-pd-img src="" alt="Ảnh sản phẩm">
+        </div>
+      </div>
+
+      <div class="pd-info">
+        <span class="pd-info__cat" data-pd-cat></span>
+        <h1 data-pd-name></h1>
+        <div class="pd-info__rating">★★★★★ <span data-pd-reviews></span></div>
+        <div class="pd-info__price" data-pd-price></div>
+        <p class="pd-info__desc" data-pd-desc></p>
+
+        <div class="qty-row">
+          <div class="qty-input">
+            <button data-qty-minus aria-label="Giảm số lượng">−</button>
+            <input type="number" value="1" min="1" aria-label="Số lượng">
+            <button data-qty-plus aria-label="Tăng số lượng">+</button>
+          </div>
+        </div>
+        <div class="pd-cta-row">
+          <button class="btn btn-gold" data-buy-now="">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 3 14h7l-1 8 11-14h-7l1-6z"/></svg>
+            Mua ngay
+          </button>
+          <a href="https://zalo.me/thuanchayvn" target="_blank" rel="noopener" class="btn btn-outline-zalo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Tư vấn qua Zalo
+          </a>
+        </div>
+
+        <div class="pd-meta">
+          <div><b>SKU:</b> <span data-pd-sku></span></div>
+          <div><b>Danh mục:</b> <a data-pd-cat-link href="#"></a></div>
+        </div>
+
+        <div class="pd-share">
+          <span>Chia sẻ</span>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.5-3H13.5V8.5c0-.87.24-1.5 1.53-1.5H16.5V4.35C16.2 4.31 15.19 4.22 14 4.22c-2.4 0-4 1.46-4 4.16V10.5H7.5v3H10V21z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l7.5 9.5L4.3 20H6.6l6-6.8 4.6 6.8H20l-7.8-10L19 4h-2.3l-5.5 6.2L6.9 4z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.3 8.75h3.3V21H3.3zM9.75 8.75h3.17v1.68h.05c.44-.83 1.53-1.7 3.15-1.7 3.37 0 4 2.22 4 5.1V21h-3.3v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-3.3z"/></svg></a>
+          <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a9 9 0 0 0-3.28 17.38c-.05-.75-.09-1.9.02-2.72.1-.75.66-4.76.66-4.76s-.17-.34-.17-.83c0-.78.45-1.36 1.02-1.36.48 0 .71.36.71.79 0 .48-.31 1.2-.46 1.87-.13.56.28 1.02.83 1.02 1 0 1.77-1.05 1.77-2.57 0-1.34-.97-2.28-2.35-2.28-1.6 0-2.54 1.2-2.54 2.44 0 .48.19.99.42 1.27a.17.17 0 0 1 .04.16c-.05.19-.15.6-.17.68-.03.11-.09.14-.2.08-.79-.37-1.28-1.52-1.28-2.45 0-2 1.45-3.83 4.18-3.83 2.19 0 3.9 1.56 3.9 3.65 0 2.18-1.37 3.93-3.28 3.93-.64 0-1.24-.33-1.45-.73l-.39 1.51c-.14.55-.53 1.23-.79 1.65A9 9 0 1 0 12 3z"/></svg></a>
+        </div>
+
+        <ul class="pd-perks">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg> Cam kết chính hãng, hoàn tiền 100% nếu phát hiện hàng giả</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg> Giao hàng toàn quốc trong 2–4 ngày</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg> Đổi trả miễn phí trong 7 ngày nếu lỗi từ nhà sản xuất</li>
+        </ul>
+
+        <div class="pd-tabs">
+          <div class="pd-tabs__nav">
+            <button class="active" data-tab="tab-desc">Mô tả</button>
+            <button data-tab="tab-usage">Hướng dẫn dùng</button>
+            <button data-tab="tab-review">Đánh giá <span data-pd-review-count></span></button>
+          </div>
+          <div class="pd-tabs__panel active" id="tab-desc">
+            <p>Sản phẩm được sản xuất theo công thức nghiên cứu hơn 20 năm của Nhà sáng lập Tâm An, từ nguồn nguyên liệu đậu hạt rau củ quả tự nhiên, không chất bảo quản, không hương liệu hoá học, an toàn cho cả gia đình sử dụng lâu dài.</p>
+          </div>
+          <div class="pd-tabs__panel" id="tab-usage">
+            <p>Dùng 1–2 muỗng cà phê mỗi ngày, pha cùng nước ấm hoặc dùng trực tiếp. Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp. Sử dụng trong vòng 12 tháng kể từ ngày sản xuất, đóng nắp kín sau mỗi lần dùng.</p>
+          </div>
+          <div class="pd-tabs__panel" id="tab-review">
+            <p>★★★★★ — "Sản phẩm rất tốt, vị tự nhiên, cả nhà mình đều dùng được." — Khách hàng đã mua</p>
+            <p>★★★★★ — "Đóng gói cẩn thận, giao nhanh, sẽ ủng hộ tiếp." — Khách hàng đã mua</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--paper-2);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Có thể bạn cũng thích</span>
+      <h2>Sản phẩm cùng danh mục</h2>
+    </div>
+    <div class="product-grid" data-related-products></div>
+  </div>
+</section>
+
+<div data-partial="footer"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

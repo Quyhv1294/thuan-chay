@@ -1,0 +1,11 @@
+{
+  "name": "thuanchay-redesign",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Thiết kế lại website Thuần Chay — thương mại điện tử sản phẩm thuần thực vật (static HTML/CSS/JS, sẵn sàng mở rộng backend).",
+  "scripts": {
+    "dev": "npx --yes serve . -l 5173",
+    "start": "npx --yes serve . -l 5173"
+  },
+  "license": "UNLICENSED"
+}
