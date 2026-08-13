@@ -146,9 +146,14 @@
     const buyBtn = e.target.closest("[data-buy-now]");
     if (buyBtn) {
       const id = buyBtn.getAttribute("data-buy-now");
-      const qtyInput = buyBtn.closest(".pd-info")?.querySelector(".qty-input input");
-      addToCart(id, qtyInput ? parseInt(qtyInput.value, 10) : 1);
-      location.href = "thanh-toan.html";
+      const product = PRODUCTS.find((p) => p.id === id);
+      if (product && product.aff) {
+        window.open(product.aff, "_blank", "noopener");
+      } else {
+        const qtyInput = buyBtn.closest(".pd-info")?.querySelector(".qty-input input");
+        addToCart(id, qtyInput ? parseInt(qtyInput.value, 10) : 1);
+        location.href = "thanh-toan.html";
+      }
     }
   });
 

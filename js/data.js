@@ -15,7 +15,8 @@ const PRODUCTS = [
     rating: 4.9,
     reviews: 214,
     img: "img/Mat tao do tam an/1-mat-tao-do-tam-an.png",
-    desc: "Cô đặc từ táo đỏ, kỷ tử và mật mía tự nhiên theo công thức gia truyền hơn 20 năm, hỗ trợ bổ huyết, dưỡng khí, ngủ ngon."
+    desc: "Cô đặc từ táo đỏ, kỷ tử và mật mía tự nhiên theo công thức gia truyền hơn 20 năm, hỗ trợ bổ huyết, dưỡng khí, ngủ ngon.",
+    aff: "https://s.shopee.vn/904MlVq6fJ"
   },
   {
     id: "mat-tao-do-gung",
@@ -27,7 +28,8 @@ const PRODUCTS = [
     rating: 4.8,
     reviews: 96,
     img: "img/Mat tao do tam an/1-mat-tao-do-tam-an-gung-1-300x300.png",
-    desc: "Thêm gừng tươi cô đặc giúp làm ấm bụng, hỗ trợ tiêu hoá — lựa chọn yêu thích những ngày trở lạnh."
+    desc: "Thêm gừng tươi cô đặc giúp làm ấm bụng, hỗ trợ tiêu hoá — lựa chọn yêu thích những ngày trở lạnh.",
+    aff: "https://s.shopee.vn/9V0dMUXwcE"
   },
   {
     id: "mat-tao-do-ich-mau",
@@ -39,7 +41,8 @@ const PRODUCTS = [
     rating: 4.9,
     reviews: 158,
     img: "img/Mat tao do tam an/1-mat-tao-do-tam-an-ich-mau-e1780373077714.webp",
-    desc: "Kết hợp ích mẫu thảo dược truyền thống, dành riêng cho phụ nữ trong chu kỳ, hỗ trợ điều hoà khí huyết."
+    desc: "Kết hợp ích mẫu thảo dược truyền thống, dành riêng cho phụ nữ trong chu kỳ, hỗ trợ điều hoà khí huyết.",
+    aff: "https://s.shopee.vn/1125Eui7kk"
   },
   {
     id: "mat-tao-do-hoa-hong",
@@ -51,7 +54,8 @@ const PRODUCTS = [
     rating: 4.7,
     reviews: 74,
     img: "img/Mat tao do tam an/1-mat-tao-do-tam-an-hoa-hong-1-300x300.png",
-    desc: "Hương hoa hồng dịu nhẹ hoà cùng táo đỏ cô đặc — nuông chiều vị giác, đẹp da từ bên trong."
+    desc: "Hương hoa hồng dịu nhẹ hoà cùng táo đỏ cô đặc — nuông chiều vị giác, đẹp da từ bên trong.",
+    aff: "https://s.shopee.vn/AUtAYLPkKn"
   },
   {
     id: "nghe-gao-lut",
@@ -63,7 +67,8 @@ const PRODUCTS = [
     rating: 4.8,
     reviews: 132,
     img: "img/Bot dau hat rau cu/1-nghe-gao-lut-1-300x300.png",
-    desc: "Nghệ nếp đỏ kết hợp gạo lứt rang, hỗ trợ dạ dày và làm đẹp da, không chất bảo quản."
+    desc: "Nghệ nếp đỏ kết hợp gạo lứt rang, hỗ trợ dạ dày và làm đẹp da, không chất bảo quản.",
+    aff: "https://s.shopee.vn/2VopIKUxkx"
   },
   {
     id: "canxi-vegan",
@@ -75,7 +80,8 @@ const PRODUCTS = [
     rating: 4.9,
     reviews: 88,
     img: "img/Bot dau hat rau cu/1-canxi-vegan-1.png",
-    desc: "Canxi thực vật chiết xuất từ rong biển, mè đen và hạt óc chó — dễ hấp thu, thân thiện hệ tiêu hoá."
+    desc: "Canxi thực vật chiết xuất từ rong biển, mè đen và hạt óc chó — dễ hấp thu, thân thiện hệ tiêu hoá.",
+    aff: "https://s.shopee.vn/9pdTlAEUZq"
   },
   {
     id: "bot-ngu-sen",
@@ -87,7 +93,8 @@ const PRODUCTS = [
     rating: 4.7,
     reviews: 61,
     img: "img/Bot dau hat rau cu/1-bot-ngu-sen-1-300x300.png",
-    desc: "Năm loại hạt sen, đậu và ngũ cốc nguyên bản xay mịn, thanh lọc cơ thể, dễ ngủ, đẹp da."
+    desc: "Năm loại hạt sen, đậu và ngũ cốc nguyên bản xay mịn, thanh lọc cơ thể, dễ ngủ, đẹp da.",
+    aff: "https://s.shopee.vn/qif2pc8n2"
   },
   {
     id: "vegan-protein",
@@ -99,7 +106,8 @@ const PRODUCTS = [
     rating: 5.0,
     reviews: 201,
     img: "img/Bot dau hat rau cu/1-vegan-protein-1-300x300.png",
-    desc: "Đạm thực vật từ đậu vàng, đậu xanh và hạt bí, không đậu nành, bổ sung dinh dưỡng toàn diện."
+    desc: "Đạm thực vật từ đậu vàng, đậu xanh và hạt bí, không đậu nành, bổ sung dinh dưỡng toàn diện.",
+    aff: "https://s.shopee.vn/30lNLqI1ye"
   },
   {
     id: "bot-nem-rau-cu-250g",
@@ -111,7 +119,8 @@ const PRODUCTS = [
     rating: 4.6,
     reviews: 47,
     img: "img/Bot nem thuan chay/1-bot-nem-rau-cu-thuan-chay-250g-1-300x300.png",
-    desc: "Gói nhỏ 250g tiện mang theo, hỗn hợp rau củ sấy lạnh nghiền mịn, đậm vị tự nhiên, không bột ngọt, không chất bảo quản."
+    desc: "Gói nhỏ 250g tiện mang theo, hỗn hợp rau củ sấy lạnh nghiền mịn, đậm vị tự nhiên, không bột ngọt, không chất bảo quản.",
+    aff: "https://s.shopee.vn/qgbMANNHU"
   },
   {
     id: "bot-nem-rau-cu",
@@ -123,7 +132,8 @@ const PRODUCTS = [
     rating: 4.7,
     reviews: 63,
     img: "img/Bot nem thuan chay/1-bot-nem-rau-cu-thuan-chay-500g-1.png",
-    desc: "Hỗn hợp rau củ sấy khô nghiền mịn, thay thế bột ngọt trong gian bếp gia đình bạn."
+    desc: "Hỗn hợp rau củ sấy khô nghiền mịn, thay thế bột ngọt trong gian bếp gia đình bạn.",
+    aff: "https://s.shopee.vn/qgbMANNHU"
   },
   {
     id: "mat-tao-do-nhan-sam",
@@ -135,7 +145,8 @@ const PRODUCTS = [
     rating: 4.9,
     reviews: 119,
     img: "img/Mat tao do tam an/1-mat-tao-do-tam-an-dang-sam-1-300x300.png",
-    desc: "Nhân sâm quý kết hợp táo đỏ cô đặc, bồi bổ khí huyết cho người mới ốm dậy, người cao tuổi."
+    desc: "Nhân sâm quý kết hợp táo đỏ cô đặc, bồi bổ khí huyết cho người mới ốm dậy, người cao tuổi.",
+    aff: "https://s.shopee.vn/50YE0CBXRz"
   },
   {
     id: "ngu-coc-thuc-duong",
@@ -147,7 +158,8 @@ const PRODUCTS = [
     rating: 4.6,
     reviews: 39,
     img: "img/Bot dau hat rau cu/1-ngu-coc-thuc-duong-1-300x300.png",
-    desc: "Hỗn hợp ngũ cốc, hạt và rau củ nguyên bản theo phương pháp thực dưỡng, thanh lọc, tăng đề kháng, dễ pha cùng nước hoặc sữa hạt."
+    desc: "Hỗn hợp ngũ cốc, hạt và rau củ nguyên bản theo phương pháp thực dưỡng, thanh lọc, tăng đề kháng, dễ pha cùng nước hoặc sữa hạt.",
+    aff: "https://s.shopee.vn/7VFYz3v5LL"
   }
 ];
 
