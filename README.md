@@ -23,7 +23,7 @@ Toàn bộ token màu/chữ/khoảng cách nằm ở đầu file `css/style.css`
 
 ```
 thuanchay-redesign/
-├── index.html                 Trang chủ
+├── trang-chu.html              Trang chủ (index.html chỉ redirect sang đây)
 ├── san-pham.html               Danh sách sản phẩm (lọc, tìm kiếm, sắp xếp)
 ├── san-pham-chi-tiet.html      Chi tiết sản phẩm (?id=...)
 ├── cong-dong.html              Danh sách bài viết / cộng đồng
@@ -50,7 +50,7 @@ thuanchay-redesign/
 
 ## 3. Chạy thử ở máy local
 
-Vì header/footer được nạp bằng `fetch()`, bạn **cần chạy qua một local server** (mở file `index.html` trực tiếp bằng `file://` sẽ bị chặn bởi CORS của trình duyệt).
+Vì header/footer được nạp bằng `fetch()`, bạn **cần chạy qua một local server** (mở file `trang-chu.html` trực tiếp bằng `file://` sẽ bị chặn bởi CORS của trình duyệt).
 
 Cách nhanh nhất (không cần cài gì thêm, chỉ cần Node.js):
 
