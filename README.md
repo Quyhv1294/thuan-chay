@@ -31,7 +31,6 @@ thuanchay-redesign/
 ├── gioi-thieu.html             Giới thiệu / câu chuyện thương hiệu
 ├── lien-he.html                 Liên hệ (form + bản đồ)
 ├── thanh-toan.html              Thanh toán (minh hoạ, xem mục 4)
-├── tai-khoan.html               Đăng nhập / tài khoản (minh hoạ)
 ├── partials/
 │   ├── header.html             Header + menu + mobile drawer (dùng chung mọi trang)
 │   └── footer.html             Footer + giỏ hàng (cart drawer) + nút gọi/Zalo
@@ -79,8 +78,7 @@ Toàn bộ dữ liệu hiện đang nằm trong `js/data.js` (mock). Để lên 
    ```
    hoặc nối vào một headless CMS (WordPress REST API — vì bản gốc dùng WordPress, Strapi, Sanity...).
 2. **Giỏ hàng / đặt hàng**: `main.js` đang lưu giỏ hàng ở `localStorage` (khoá `thuanchay_cart`). Khi có backend, thay các hàm `getCart()/saveCart()` để gọi API giỏ hàng, và nối nút "Đặt hàng" ở `thanh-toan.html` tới API tạo đơn + cổng thanh toán (VNPay, MoMo, ZaloPay...).
-3. **Đăng nhập**: `tai-khoan.html` hiện là form minh hoạ — nối vào hệ thống xác thực thật (JWT/session) khi có backend.
-4. **Form liên hệ / đăng ký nhận tin**: hiện chỉ hiện thông báo mẫu (`showToast`) — thay bằng gọi API gửi email hoặc CRM.
+3. **Form liên hệ / đăng ký nhận tin**: hiện chỉ hiện thông báo mẫu (`showToast`) — thay bằng gọi API gửi email hoặc CRM.
 
 Vì toàn bộ trang là HTML/CSS/JS thuần, bạn có thể nâng cấp dần từng phần lên React/Next.js sau này mà không phải thiết kế lại — component nào cũng đã có sẵn cấu trúc HTML/CSS rõ ràng để chuyển đổi.
 
