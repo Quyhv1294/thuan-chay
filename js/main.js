@@ -216,7 +216,7 @@
     if (featured) renderGrid(featured, PRODUCTS.slice(0, 8));
     const articles = document.querySelector("[data-featured-articles]");
     if (articles) {
-      articles.innerHTML = ARTICLES.map(articleCardHTML).join("");
+      articles.innerHTML = ARTICLES.slice(0, 3).map(articleCardHTML).join("");
     }
     initTestimonialNav();
   }
@@ -368,6 +368,26 @@
     grid.innerHTML = ARTICLES.map(articleCardHTML).join("");
     initReveal();
   }
+
+  function initBlogTabs() {
+    const tabsWrap = document.querySelector("[data-blog-tabs]");
+    const grid = document.querySelector("[data-blog-tabs-grid]");
+    if (!tabsWrap || !grid) return;
+    const tabs = tabsWrap.querySelectorAll(".blog-tab");
+    const render = (tag) => {
+      grid.innerHTML = ARTICLES.filter((a) => a.tag === tag).slice(0, 4).map(articleCardHTML).join("");
+      initReveal();
+    };
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((t) => t.classList.remove("is-active"));
+        tab.classList.add("is-active");
+        render(tab.getAttribute("data-tag"));
+      });
+    });
+    const activeTab = tabsWrap.querySelector(".blog-tab.is-active") || tabs[0];
+    if (activeTab) render(activeTab.getAttribute("data-tag"));
+  }
   function initArticleDetail() {
     const wrap = document.querySelector("[data-article-detail]");
     if (!wrap) return;
@@ -442,6 +462,7 @@
     initShop();
     initProductDetail();
     initBlogList();
+    initBlogTabs();
     initArticleDetail();
     initContactForm();
     initNewsletterForm();
