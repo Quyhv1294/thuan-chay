@@ -20,8 +20,8 @@
       <h1>Dinh dưỡng <i>thuần thực vật</i>,<br>từ tâm huyết 20 năm</h1>
       <p class="lede">Mật táo đỏ, bột đậu hạt rau củ và gia vị nêm thuần chay — được nghiên cứu bởi Tâm An, người trường chay hơn 20 năm, không chất bảo quản, không hương liệu hoá học.</p>
       <div class="hero__cta">
-        <a href="san-pham.html" class="btn btn-gold">Khám phá sản phẩm</a>
-        <a href="gioi-thieu.html" class="btn btn-outline">Câu chuyện Thuần Chay</a>
+        <a href="san-pham" class="btn btn-gold">Khám phá sản phẩm</a>
+        <a href="gioi-thieu" class="btn btn-outline">Câu chuyện Thuần Chay</a>
       </div>
       <div class="hero__trust">
         <div><b>20+</b><span>năm nghiên cứu</span></div>
@@ -64,7 +64,7 @@
     </div>
     <div class="product-grid" data-featured-products></div>
     <div class="text-center" style="margin-top:44px;">
-      <a href="san-pham.html" class="btn btn-outline-ink">Xem toàn bộ sản phẩm</a>
+      <a href="san-pham" class="btn btn-outline-ink">Xem toàn bộ sản phẩm</a>
     </div>
   </div>
 </section>
@@ -84,7 +84,7 @@
         <cite>— Tâm An, Nhà sáng lập</cite>
       </blockquote>
       <p>Là người trường chay hơn 20 năm, chị Tâm An dành phần lớn thời gian nghiên cứu đông y và dinh dưỡng học, mong muốn cải thiện sức khoẻ cho cộng đồng người ăn chay lâu dài — không chất bảo quản, không hương liệu, không hoá chất tạo mùi.</p>
-      <div style="margin-top:28px;"><a href="gioi-thieu.html" class="btn btn-outline">Đọc câu chuyện đầy đủ</a></div>
+      <div style="margin-top:28px;"><a href="gioi-thieu" class="btn btn-outline">Đọc câu chuyện đầy đủ</a></div>
     </div>
   </div>
 </section>
@@ -145,7 +145,7 @@
         <div class="community-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
         <h3>Website Cộng Đồng Chay</h3>
         <p>Ngôi nhà chung với công thức món chay ngon, địa điểm ăn chay và kiến thức dinh dưỡng.</p>
-        <a href="cong-dong.html" class="btn-ghost">Khám phá ngay</a>
+        <a href="cong-dong" class="btn-ghost">Khám phá ngay</a>
       </div>
     </div>
   </div>
@@ -228,7 +228,7 @@
 <script>
   // render category band (kept inline since it's homepage-only, 3 static cards)
   document.getElementById("cat-grid").innerHTML = CATEGORIES.map(c => `
-    <a href="san-pham.html?cat=${encodeURIComponent(c.slug)}" class="cat-card reveal">
+    <a href="san-pham?cat=${encodeURIComponent(c.slug)}" class="cat-card reveal">
       <img src="${c.img}" alt="${c.name}">
       <div class="cat-card__scrim"></div>
       <div class="cat-card__body"><span>Thuần Chay</span><h3>${c.name}</h3></div>

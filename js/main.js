@@ -98,7 +98,7 @@
     if (!list) return;
     const cart = getCart();
     if (!cart.length) {
-      list.innerHTML = `<div class="cart-empty">Giỏ hàng đang trống.<br>Khám phá <a href="san-pham.html" style="color:var(--sage-dark);font-weight:700;">sản phẩm thuần chay</a> nhé!</div>`;
+      list.innerHTML = `<div class="cart-empty">Giỏ hàng đang trống.<br>Khám phá <a href="san-pham" style="color:var(--sage-dark);font-weight:700;">sản phẩm thuần chay</a> nhé!</div>`;
     } else {
       list.innerHTML = cart
         .map((item) => {
@@ -152,7 +152,7 @@
       } else {
         const qtyInput = buyBtn.closest(".pd-info")?.querySelector(".qty-input input");
         addToCart(id, qtyInput ? parseInt(qtyInput.value, 10) : 1);
-        location.href = "thanh-toan.html";
+        location.href = "thanh-toan";
       }
     }
   });
@@ -180,14 +180,14 @@
   function productCardHTML(p) {
     return `
     <article class="product-card reveal">
-      <a href="san-pham-chi-tiet.html?id=${p.id}" class="product-card__frame">
+      <a href="san-pham-chi-tiet?id=${p.id}" class="product-card__frame">
         <img src="${p.img}" alt="${p.name}" loading="lazy">
         ${p.badge ? `<span class="product-card__badge">${p.badge}</span>` : ""}
         <span class="product-card__seal">${leafSealSVG()}</span>
       </a>
       <div class="product-card__body">
         <span class="product-card__cat">${p.category}</span>
-        <a href="san-pham-chi-tiet.html?id=${p.id}"><h3 class="product-card__name">${p.name}</h3></a>
+        <a href="san-pham-chi-tiet?id=${p.id}"><h3 class="product-card__name">${p.name}</h3></a>
         <div class="product-card__foot">
           <span class="price">${p.oldPrice ? `<del>${formatVND(p.oldPrice)}</del>` : ""}${formatVND(p.price)}</span>
         </div>
@@ -224,10 +224,10 @@
   function articleCardHTML(a) {
     return `
     <article class="article-card reveal">
-      <a href="bai-viet.html?id=${a.id}" class="article-card__img"><img src="${a.img}" alt="${a.title}" loading="lazy" onerror="this.onerror=null;this.src='img/Logo/logo-thuan-chay-1.png';this.style.objectFit='contain';this.style.padding='18%';this.style.background='#fff';"></a>
+      <a href="bai-viet?id=${a.id}" class="article-card__img"><img src="${a.img}" alt="${a.title}" loading="lazy" onerror="this.onerror=null;this.src='img/Logo/logo-thuan-chay-1.png';this.style.objectFit='contain';this.style.padding='18%';this.style.background='#fff';"></a>
       <div class="article-card__body">
         <span class="article-card__tag">${a.tag}</span>
-        <a href="bai-viet.html?id=${a.id}"><h3>${a.title}</h3></a>
+        <a href="bai-viet?id=${a.id}"><h3>${a.title}</h3></a>
         <div class="article-card__meta"><span>${a.date}</span><span>·</span><span>${a.minutes} phút đọc</span></div>
       </div>
     </article>`;
@@ -325,7 +325,7 @@
     const catLink = wrap.querySelector("[data-pd-cat-link]");
     if (catLink) {
       catLink.textContent = p.category;
-      catLink.href = `san-pham.html?cat=${encodeURIComponent(p.category)}`;
+      catLink.href = `san-pham?cat=${encodeURIComponent(p.category)}`;
     }
 
     // review count in tab label
