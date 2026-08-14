@@ -377,7 +377,7 @@
     document.title = `${a.title} | Thuần Chay`;
     wrap.querySelector("[data-a-tag]").textContent = a.tag;
     wrap.querySelector("[data-a-title]").textContent = a.title;
-    wrap.querySelector("[data-a-img]").src = a.img;
+    document.querySelector("[data-a-img]").src = a.img;
     wrap.querySelector("[data-a-date]").textContent = a.date;
     wrap.querySelector("[data-a-minutes]").textContent = `${a.minutes} phút đọc`;
     const bc = wrap.querySelector("[data-a-breadcrumb]");
