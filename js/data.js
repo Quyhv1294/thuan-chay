@@ -188,7 +188,7 @@ const ARTICLES = [
     tag: "Món chay ngon",
     title: "3 món chay đãi tiệc nhìn sang, làm cực dễ",
     excerpt: "Không cần tay nghề đầu bếp, chỉ với vài bước đơn giản là có ngay mâm cỗ chay đẹp mắt, đãi khách tự tin.",
-    img: "https://images.unsplash.com/photo-1579722820903-e40e461f3595?q=80&w=900&auto=format&fit=crop",
+    img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=900&auto=format&fit=crop",
     date: "22/06/2026",
     minutes: 7
   },

@@ -224,7 +224,7 @@
   function articleCardHTML(a) {
     return `
     <article class="article-card reveal">
-      <a href="bai-viet.html?id=${a.id}" class="article-card__img"><img src="${a.img}" alt="${a.title}" loading="lazy"></a>
+      <a href="bai-viet.html?id=${a.id}" class="article-card__img"><img src="${a.img}" alt="${a.title}" loading="lazy" onerror="this.onerror=null;this.src='img/Logo/logo-thuan-chay-1.png';this.style.objectFit='contain';this.style.padding='18%';this.style.background='#fff';"></a>
       <div class="article-card__body">
         <span class="article-card__tag">${a.tag}</span>
         <a href="bai-viet.html?id=${a.id}"><h3>${a.title}</h3></a>

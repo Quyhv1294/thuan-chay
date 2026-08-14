@@ -517,11 +517,11 @@ p{ margin:0; }
 .badge-pill{ display:inline-flex; align-items:center; gap:6px; background:var(--paper-2); border-radius:999px; padding:6px 14px; font-size:12.5px; font-weight:700; color:var(--sage-dark); }
 .blog-tabs{ display:flex; align-items:center; justify-content:center; gap:12px; margin:0 auto 40px; flex-wrap:wrap; }
 .blog-tab{
-  padding:10px 22px; border-radius:999px; border:1.5px solid var(--line);
-  background:var(--paper-3); font-size:13.5px; font-weight:700; color:var(--charcoal-soft);
+  padding:10px 22px; border-radius:999px; border:1.5px solid var(--gold);
+  background:var(--paper-3); font-size:13.5px; font-weight:700; color:var(--gold-dark);
   transition:background .2s ease, border-color .2s ease, color .2s ease;
 }
-.blog-tab:hover{ border-color:var(--gold); color:var(--ink); }
+.blog-tab:hover{ background:rgba(47,174,100,0.1); }
 .blog-tab.is-active{ background:var(--gold); border-color:var(--gold); color:#fff; }
 .divider-leaf{ display:flex; align-items:center; justify-content:center; gap:16px; margin:0 auto 40px; color:var(--sage); opacity:.8; }
 .divider-leaf::before, .divider-leaf::after{ content:""; height:1px; width:80px; background:var(--line); }
