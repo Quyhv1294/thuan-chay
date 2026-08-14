@@ -172,7 +172,13 @@ const ARTICLES = [
     excerpt: "Không cần cầu kỳ, chỉ với nguyên liệu quen thuộc bạn đã có một tuần ăn chay ngon miệng và cân bằng dinh dưỡng.",
     img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=900&auto=format&fit=crop",
     date: "19/07/2026",
-    minutes: 8
+    minutes: 8,
+    body: `<p>Nhiều người mới bắt đầu ăn chay thường bối rối không biết nên ăn gì mỗi ngày để vừa ngon miệng, vừa đủ chất. Thực đơn 7 ngày dưới đây được đội ngũ Thuần Chay xây dựng dựa trên nguyên tắc đơn giản: nguyên liệu dễ tìm, cách nấu không cầu kỳ, nhưng vẫn cân bằng đạm — tinh bột — chất xơ.</p>
+    <h2>Nguyên tắc xây dựng thực đơn</h2>
+    <p>Mỗi bữa chính nên có ít nhất một nguồn đạm thực vật (đậu, đậu hũ, nấm), một phần tinh bột nguyên cám (gạo lứt, yến mạch) và rau củ nhiều màu sắc. Xen kẽ các món luộc, hấp, xào nhanh để tránh ngán và giữ trọn dưỡng chất.</p>
+    <p>Gợi ý nhanh cho 7 ngày: thứ 2 đậu hũ sốt cà chua, thứ 3 canh rau củ nấm, thứ 4 cơm gạo lứt đậu đen, thứ 5 bún riêu chay, thứ 6 salad đậu gà, thứ 7 lẩu nấm thập cẩm, chủ nhật cháo yến mạch rau củ.</p>
+    <blockquote>"Ăn chay đủ chất không khó — chỉ cần đa dạng nguyên liệu và lắng nghe cơ thể mỗi ngày."</blockquote>
+    <p>Nếu bận rộn, bạn có thể kết hợp thêm Bột Đậu Hạt Rau Củ hoặc Bột Nêm Rau Củ Tâm An để rút ngắn thời gian chế biến mà vẫn đảm bảo dinh dưỡng cho cả tuần.</p>`
   },
   {
     id: "chon-quan-chay-ngon-sai-gon",
@@ -181,7 +187,12 @@ const ARTICLES = [
     excerpt: "Từ quán cơm chay bình dân đến nhà hàng chay fine-dining, đây là danh sách được cộng đồng Thuần Chay bình chọn.",
     img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=900&auto=format&fit=crop",
     date: "05/07/2026",
-    minutes: 5
+    minutes: 5,
+    body: `<p>Sài Gòn là thiên đường của người ăn chay với hàng trăm quán ăn đa dạng phong cách — từ cơm chay bình dân vỉa hè đến nhà hàng chay fine-dining. Dưới đây là những gợi ý được cộng đồng Thuần Chay bình chọn nhiều nhất tuần qua.</p>
+    <h2>Tiêu chí lựa chọn</h2>
+    <p>Danh sách được tổng hợp dựa trên phản hồi thực tế từ cộng đồng hơn 40.000 thành viên trong nhóm "Vì Một Thế Giới Trường Chay" — ưu tiên các quán có nguyên liệu tươi sạch, giá cả hợp lý và không gian thoải mái.</p>
+    <p>Từ các quán cơm chay quận 3, quán bún chay quận Phú Nhuận cho đến những nhà hàng chay cao cấp ở quận 1 — mỗi nơi đều mang một phong vị riêng, phù hợp cho cả bữa ăn nhanh lẫn buổi hẹn hò, họp mặt gia đình.</p>
+    <p>Bạn có quán chay yêu thích muốn giới thiệu? Hãy chia sẻ cùng cộng đồng tại congdong.thuanchay.vn để lan toả những địa chỉ ăn chay ngon đến nhiều người hơn.</p>`
   },
   {
     id: "mon-chay-dai-tiec",
@@ -190,7 +201,15 @@ const ARTICLES = [
     excerpt: "Không cần tay nghề đầu bếp, chỉ với vài bước đơn giản là có ngay mâm cỗ chay đẹp mắt, đãi khách tự tin.",
     img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=900&auto=format&fit=crop",
     date: "22/06/2026",
-    minutes: 7
+    minutes: 7,
+    body: `<p>Không cần tay nghề đầu bếp, chỉ với vài nguyên liệu quen thuộc và một chút khéo léo trong cách trình bày, bạn hoàn toàn có thể tự tay chuẩn bị mâm cỗ chay đẹp mắt để đãi khách.</p>
+    <h2>1. Nấm đông cô nhồi đậu hũ sốt tiêu đen</h2>
+    <p>Vị đậm đà của sốt tiêu đen hoà cùng độ mềm béo của đậu hũ nhồi trong nấm đông cô — món khai vị gây ấn tượng ngay từ miếng đầu tiên.</p>
+    <h2>2. Gỏi cuốn ngũ sắc chấm sốt me</h2>
+    <p>Sự kết hợp của rau củ nhiều màu sắc cuộn trong bánh tráng mỏng, chấm cùng sốt me chua ngọt — vừa đẹp mắt vừa thanh mát, rất hợp làm món khai vị cho tiệc.</p>
+    <h2>3. Lẩu nấm thảo mộc thanh vị</h2>
+    <p>Nước lẩu ngọt thanh từ rau củ và thảo mộc tự nhiên, nhúng cùng đa dạng loại nấm và rau xanh — món chính vừa ấm bụng vừa giữ được sự nhẹ nhàng, phù hợp cho tiệc tối sum vầy.</p>
+    <p>Chỉ với 3 món trên, bạn đã có một bữa tiệc chay tươm tất, sang trọng mà không mất quá nhiều thời gian chuẩn bị.</p>`
   },
   {
     id: "do-uong-thanh-loc",
@@ -199,7 +218,11 @@ const ARTICLES = [
     excerpt: "Những ly nước detox dễ làm tại nhà, giúp thanh lọc cơ thể và đẹp da chỉ sau vài ngày kiên trì.",
     img: "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?q=80&w=900&auto=format&fit=crop",
     date: "10/06/2026",
-    minutes: 4
+    minutes: 4,
+    body: `<p>Những ngày cơ thể mệt mỏi, một ly nước detox từ nguyên liệu tự nhiên có thể giúp bạn cảm thấy nhẹ nhàng và tràn đầy năng lượng trở lại. Dưới đây là 5 công thức dễ làm tại nhà.</p>
+    <h2>Gợi ý 5 công thức</h2>
+    <p>1. Nước chanh sả gừng ấm — hỗ trợ tiêu hoá buổi sáng.<br>2. Nước dưa leo bạc hà — thanh mát, lợi tiểu.<br>3. Nước táo đỏ kỷ tử — bổ huyết, đẹp da.<br>4. Sinh tố rau xanh cần tây táo — giàu chất xơ và vitamin.<br>5. Nước ép cà rốt nghệ gừng — tăng đề kháng, hỗ trợ dạ dày.</p>
+    <p>Nếu không có nhiều thời gian pha chế mỗi ngày, Mật Táo Đỏ Tâm An là lựa chọn tiện lợi — chỉ cần pha cùng nước ấm là có ngay một ly thanh lọc cơ thể chỉ trong vài phút.</p>`
   },
   // ---- Kiến thức dinh dưỡng ----
   {
@@ -209,7 +232,12 @@ const ARTICLES = [
     excerpt: "Táo đỏ từ lâu đã là vị thuốc quý trong đông y — cùng tìm hiểu vì sao mật táo đỏ cô đặc lại được nhiều chị em tin dùng mỗi ngày.",
     img: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=900&auto=format&fit=crop",
     date: "28/07/2026",
-    minutes: 6
+    minutes: 6,
+    body: `<p>Táo đỏ từ lâu đã là vị thuốc quý trong đông y, đặc biệt được tin dùng bởi phụ nữ nhờ khả năng bổ huyết, dưỡng nhan. Cùng tìm hiểu vì sao mật táo đỏ cô đặc lại được nhiều chị em lựa chọn dùng mỗi ngày.</p>
+    <h2>Những lợi ích nổi bật</h2>
+    <p>1. Bổ huyết, cải thiện tuần hoàn.<br>2. Hỗ trợ giấc ngủ sâu và ngon hơn.<br>3. Làm đẹp da từ bên trong.<br>4. Tăng cường đề kháng.<br>5. Hỗ trợ tiêu hoá nhẹ nhàng.<br>6. Ổn định tâm trạng, giảm căng thẳng.<br>7. Bồi bổ cơ thể sau ốm hoặc sau sinh.</p>
+    <blockquote>"Một ly mật táo đỏ mỗi ngày là cách chăm sóc sức khoẻ giản dị nhưng bền vững theo thời gian."</blockquote>
+    <p>Mật Táo Đỏ Tâm An được cô đặc từ táo đỏ, kỷ tử và mật mía tự nhiên theo công thức gia truyền hơn 20 năm nghiên cứu của Nhà sáng lập Tâm An — không chất bảo quản, không hương liệu hoá học.</p>`
   },
   {
     id: "dam-thuc-vat-du-khong",
@@ -218,7 +246,12 @@ const ARTICLES = [
     excerpt: "Giải đáp thắc mắc phổ biến nhất của người mới ăn chay — làm sao để bổ sung đủ đạm mà không cần thịt cá.",
     img: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=900&auto=format&fit=crop",
     date: "14/07/2026",
-    minutes: 7
+    minutes: 7,
+    body: `<p>"Ăn chay có đủ đạm không?" là câu hỏi phổ biến nhất mà người mới bắt đầu hành trình ăn chay thường băn khoăn. Câu trả lời là hoàn toàn có thể — nếu bạn biết cách kết hợp nguồn thực phẩm đúng cách.</p>
+    <h2>Nguồn đạm thực vật dồi dào</h2>
+    <p>Đậu nành, đậu lăng, đậu gà, hạt óc chó, hạt bí, yến mạch và các loại đậu hạt nói chung đều là nguồn đạm thực vật chất lượng cao. Kết hợp đa dạng nhiều loại đậu hạt trong ngày sẽ giúp cơ thể nhận đủ các axit amin thiết yếu.</p>
+    <p>Một người trưởng thành ăn chay cần khoảng 0.8–1g đạm/kg thể trọng mỗi ngày — hoàn toàn có thể đáp ứng đủ nếu thực đơn đa dạng đậu hạt, rau củ và ngũ cốc nguyên cám.</p>
+    <p>Vegan Protein của Thuần Chay là giải pháp bổ sung đạm nhanh gọn cho người tập luyện thể thao hoặc bận rộn — chiết xuất từ đậu vàng, đậu xanh và hạt bí, không đậu nành.</p>`
   },
   {
     id: "sat-canxi-an-chay",
@@ -227,7 +260,12 @@ const ARTICLES = [
     excerpt: "Hai vi chất dễ thiếu hụt nhất ở người ăn chay lâu năm, và cách bổ sung tự nhiên từ thực vật hiệu quả.",
     img: "https://images.unsplash.com/photo-1622484212385-bcb08d3f8de1?q=80&w=900&auto=format&fit=crop",
     date: "30/06/2026",
-    minutes: 6
+    minutes: 6,
+    body: `<p>Sắt và canxi là hai vi chất dễ thiếu hụt nhất ở người ăn chay lâu năm, do phần lớn nguồn thực phẩm giàu hai chất này thường đến từ động vật. Tin vui là thực vật vẫn có thể đáp ứng đủ nhu cầu nếu bạn biết cách chọn lựa.</p>
+    <h2>Nguồn sắt và canxi từ thực vật</h2>
+    <p>Rau lá xanh đậm (rau bina, cải xoăn), đậu lăng, hạt mè, hạt óc chó và rong biển là những nguồn sắt, canxi tự nhiên dồi dào. Kết hợp cùng vitamin C (cam, chanh, ổi) trong bữa ăn sẽ giúp cơ thể hấp thu sắt hiệu quả hơn.</p>
+    <p>Ngoài ra, hạn chế uống trà, cà phê ngay sau bữa ăn cũng là cách đơn giản giúp tăng khả năng hấp thu hai vi chất quan trọng này.</p>
+    <p>Canxi Vegan của Thuần Chay chiết xuất từ rong biển, mè đen và hạt óc chó — dễ hấp thu, thân thiện với hệ tiêu hoá, phù hợp bổ sung hằng ngày cho người ăn chay trường.</p>`
   },
   {
     id: "thoi-quen-tieu-hoa-khoe",
@@ -236,7 +274,11 @@ const ARTICLES = [
     excerpt: "Ăn chay đúng cách không chỉ là chọn thực phẩm, mà còn là xây dựng thói quen ăn uống lành mạnh mỗi ngày.",
     img: "https://images.unsplash.com/photo-1595475884562-073c30d45670?q=80&w=900&auto=format&fit=crop",
     date: "18/06/2026",
-    minutes: 5
+    minutes: 5,
+    body: `<p>Ăn chay đúng cách không chỉ nằm ở việc chọn thực phẩm, mà còn là xây dựng những thói quen ăn uống lành mạnh mỗi ngày để hệ tiêu hoá luôn khoẻ mạnh.</p>
+    <h2>5 thói quen nên duy trì</h2>
+    <p>1. Nhai kỹ, ăn chậm để hỗ trợ tiêu hoá.<br>2. Uống đủ nước, ưu tiên nước ấm vào buổi sáng.<br>3. Bổ sung chất xơ từ rau củ tươi mỗi bữa.<br>4. Hạn chế đồ chiên rán nhiều dầu mỡ.<br>5. Ăn đúng giờ, tránh bỏ bữa.</p>
+    <p>Duy trì đều đặn những thói quen nhỏ này trong vài tuần, bạn sẽ cảm nhận rõ rệt sự thay đổi tích cực từ hệ tiêu hoá đến tinh thần mỗi ngày.</p>`
   },
   // ---- Tin tức & sự kiện ----
   {
@@ -246,7 +288,11 @@ const ARTICLES = [
     excerpt: "Sản phẩm mới nhất trong hành trình 20 năm nghiên cứu của Nhà sáng lập Tâm An, chính thức có mặt trên kệ hàng.",
     img: "https://images.unsplash.com/photo-1611075384410-9dbcc3388de2?q=80&w=900&auto=format&fit=crop",
     date: "02/08/2026",
-    minutes: 3
+    minutes: 3,
+    body: `<p>Sau nhiều năm nghiên cứu và thử nghiệm, Thuần Chay chính thức giới thiệu dòng sản phẩm Ngũ Cốc Thực Dưỡng mới — thành quả mới nhất trong hành trình hơn 20 năm nghiên cứu đông y và dinh dưỡng học của Nhà sáng lập Tâm An.</p>
+    <h2>Điểm nổi bật của sản phẩm</h2>
+    <p>Sản phẩm kết hợp nhiều loại ngũ cốc, hạt và rau củ nguyên bản theo phương pháp thực dưỡng truyền thống, không chất bảo quản, không hương liệu hoá học — phù hợp cho bữa sáng nhanh gọn hoặc bữa phụ lành mạnh trong ngày.</p>
+    <p>Sản phẩm hiện đã có mặt trên website thuanchay.vn và các kênh phân phối chính thức của Thuần Chay. Đừng bỏ lỡ ưu đãi ra mắt dành cho những khách hàng đặt mua sớm nhất.</p>`
   },
   {
     id: "hoi-cho-thuc-pham-chay",
@@ -255,7 +301,11 @@ const ARTICLES = [
     excerpt: "Gặp gỡ đội ngũ Thuần Chay, trải nghiệm và mua sắm trực tiếp sản phẩm với ưu đãi riêng tại hội chợ.",
     img: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=900&auto=format&fit=crop",
     date: "20/07/2026",
-    minutes: 4
+    minutes: 4,
+    body: `<p>Thuần Chay vinh dự góp mặt tại Hội chợ Thực phẩm Chay Việt Nam 2026 — sự kiện quy tụ hàng trăm thương hiệu thực phẩm thuần chay trên khắp cả nước.</p>
+    <h2>Đến gian hàng Thuần Chay để làm gì?</h2>
+    <p>Tại gian hàng Thuần Chay, khách tham quan sẽ có cơ hội trải nghiệm trực tiếp toàn bộ sản phẩm, giao lưu cùng đội ngũ tư vấn dinh dưỡng, và nhận nhiều ưu đãi độc quyền chỉ có tại sự kiện.</p>
+    <p>Hẹn gặp bạn tại hội chợ để cùng khám phá hành trình sống thuận tự nhiên mà Thuần Chay đang theo đuổi suốt hơn 20 năm qua.</p>`
   },
   {
     id: "cot-moc-40000-thanh-vien",
@@ -264,7 +314,12 @@ const ARTICLES = [
     excerpt: "Một cột mốc đáng nhớ của cộng đồng ăn chay lớn mạnh — cảm ơn hàng ngàn câu chuyện được chia sẻ mỗi ngày.",
     img: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?q=80&w=900&auto=format&fit=crop",
     date: "08/07/2026",
-    minutes: 3
+    minutes: 3,
+    body: `<p>Một cột mốc đáng nhớ vừa được ghi nhận — nhóm cộng đồng "Vì Một Thế Giới Trường Chay" trên Facebook đã chính thức cán mốc 40.000 thành viên, trở thành một trong những cộng đồng ăn chay lớn mạnh nhất tại Việt Nam.</p>
+    <h2>Hành trình xây dựng cộng đồng</h2>
+    <p>Từ những ngày đầu chỉ vài trăm thành viên, nhóm đã phát triển thành nơi chia sẻ kiến thức, công thức nấu ăn và những câu chuyện tử tế của hàng chục nghìn người theo đuổi lối sống thuần thực vật.</p>
+    <blockquote>"Mỗi câu chuyện được chia sẻ là một hạt giống tử tế được gieo thêm vào cộng đồng."</blockquote>
+    <p>Cảm ơn tất cả thành viên đã đồng hành cùng Thuần Chay trong suốt hành trình này. Hãy tiếp tục lan toả lối sống thuận tự nhiên đến nhiều người hơn nữa.</p>`
   },
   {
     id: "chuong-trinh-tri-an-khach-hang",
@@ -273,7 +328,11 @@ const ARTICLES = [
     excerpt: "Nhiều ưu đãi hấp dẫn dành riêng cho khách hàng thân thiết của Thuần Chay trong suốt tháng 8.",
     img: "https://images.unsplash.com/photo-1615485925600-97237c4fc1ec?q=80&w=900&auto=format&fit=crop",
     date: "01/08/2026",
-    minutes: 2
+    minutes: 2,
+    body: `<p>Nhằm tri ân những khách hàng đã đồng hành cùng Thuần Chay trong suốt thời gian qua, chúng tôi chính thức triển khai chương trình ưu đãi đặc biệt dành riêng cho khách hàng thân thiết trong tháng 8.</p>
+    <h2>Ưu đãi trong chương trình</h2>
+    <p>Khách hàng thân thiết sẽ nhận được nhiều phần quà và mã giảm giá hấp dẫn khi mua sắm các sản phẩm Mật Táo Đỏ, Bột Đậu Hạt Rau Củ và Bột Nêm Thuần Chay trong suốt tháng.</p>
+    <p>Theo dõi fanpage và nhóm cộng đồng Thuần Chay để cập nhật chi tiết thể lệ chương trình và không bỏ lỡ những ưu đãi hấp dẫn nhất.</p>`
   }
 ];
 

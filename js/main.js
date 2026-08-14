@@ -398,6 +398,8 @@
     wrap.querySelector("[data-a-tag]").textContent = a.tag;
     wrap.querySelector("[data-a-title]").textContent = a.title;
     document.querySelector("[data-a-img]").src = a.img;
+    const bodyEl = document.querySelector("[data-a-body]");
+    if (bodyEl) bodyEl.innerHTML = a.body || "";
     wrap.querySelector("[data-a-date]").textContent = a.date;
     wrap.querySelector("[data-a-minutes]").textContent = `${a.minutes} phút đọc`;
     const bc = wrap.querySelector("[data-a-breadcrumb]");
