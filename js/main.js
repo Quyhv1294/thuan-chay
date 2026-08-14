@@ -422,6 +422,156 @@
       form.reset();
     });
   }
+  /* ---------------------------------------------------------------- */
+  /* 9b. Account: register + email activation code (client-side demo) */
+  /*     No backend yet — accounts are stored in localStorage and the */
+  /*     "email" code is shown on screen instead of actually sent.    */
+  /*     Swap generateCode()/showToast() calls for a real email API   */
+  /*     (see README §4) when a backend is connected.                 */
+  /* ---------------------------------------------------------------- */
+  const ACCOUNTS_KEY = "thuanchay_accounts";
+  function getAccounts() {
+    try {
+      return JSON.parse(localStorage.getItem(ACCOUNTS_KEY)) || {};
+    } catch (e) {
+      return {};
+    }
+  }
+  function saveAccounts(accounts) {
+    localStorage.setItem(ACCOUNTS_KEY, JSON.stringify(accounts));
+  }
+  function generateCode() {
+    return String(Math.floor(100000 + Math.random() * 900000));
+  }
+  function initAccount() {
+    const tabsWrap = document.querySelector("[data-account-tabs]");
+    const loginForm = document.querySelector("[data-login-form]");
+    const registerForm = document.querySelector("[data-register-form]");
+    const verifyForm = document.querySelector("[data-verify-form]");
+    if (!loginForm && !registerForm && !verifyForm) return;
+
+    const title = document.querySelector("[data-account-title]");
+    const subtitle = document.querySelector("[data-account-subtitle]");
+
+    function showPanel(name) {
+      document.querySelectorAll("[data-account-panel]").forEach((p) => {
+        p.hidden = p.getAttribute("data-account-panel") !== name;
+      });
+      tabsWrap?.querySelectorAll(".blog-tab").forEach((t) => {
+        t.classList.toggle("is-active", t.getAttribute("data-panel") === name);
+      });
+      if (title && subtitle) {
+        if (name === "register") {
+          title.textContent = "Đăng ký";
+          subtitle.textContent = "Tạo tài khoản mới để theo dõi đơn hàng dễ dàng hơn.";
+        } else if (name === "verify") {
+          title.textContent = "Kích hoạt tài khoản";
+          subtitle.textContent = "Nhập mã kích hoạt để hoàn tất đăng ký.";
+        } else {
+          title.textContent = "Đăng nhập";
+          subtitle.textContent = "Quản lý đơn hàng và thông tin cá nhân của bạn.";
+        }
+      }
+    }
+
+    tabsWrap?.querySelectorAll(".blog-tab").forEach((tab) => {
+      tab.addEventListener("click", () => showPanel(tab.getAttribute("data-panel")));
+    });
+
+    let pendingEmail = null;
+
+    function openVerifyPanel(email) {
+      pendingEmail = email;
+      const accounts = getAccounts();
+      const acc = accounts[email];
+      document.querySelector("[data-verify-email]").textContent = email;
+      document.querySelector("[data-verify-demo-code]").textContent = `Mã demo: ${acc.code}`;
+      showPanel("verify");
+    }
+
+    registerForm?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!registerForm.checkValidity()) {
+        registerForm.reportValidity();
+        return;
+      }
+      const [nameInput, emailInput, passInput, confirmInput] = registerForm.querySelectorAll("input");
+      const email = emailInput.value.trim().toLowerCase();
+      if (passInput.value !== confirmInput.value) {
+        showToast("Mật khẩu nhập lại không khớp.");
+        return;
+      }
+      const accounts = getAccounts();
+      if (accounts[email] && accounts[email].activated) {
+        showToast("Email này đã được đăng ký. Vui lòng đăng nhập.");
+        showPanel("login");
+        return;
+      }
+      accounts[email] = {
+        name: nameInput.value.trim(),
+        password: passInput.value,
+        code: generateCode(),
+        activated: false
+      };
+      saveAccounts(accounts);
+      showToast(`Đã "gửi" mã kích hoạt tới ${email} (bản demo — hiển thị ngay bên dưới).`);
+      openVerifyPanel(email);
+    });
+
+    verifyForm?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!pendingEmail) return;
+      const codeInput = verifyForm.querySelector("input");
+      const accounts = getAccounts();
+      const acc = accounts[pendingEmail];
+      if (!acc) return;
+      if (codeInput.value.trim() !== acc.code) {
+        showToast("Mã kích hoạt không đúng, vui lòng thử lại.");
+        return;
+      }
+      acc.activated = true;
+      saveAccounts(accounts);
+      showToast("Kích hoạt tài khoản thành công! Vui lòng đăng nhập.");
+      registerForm?.reset();
+      verifyForm.reset();
+      loginForm?.querySelector('input[type="email"]') && (loginForm.querySelector('input[type="email"]').value = pendingEmail);
+      showPanel("login");
+    });
+
+    document.querySelector("[data-resend-code]")?.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (!pendingEmail) return;
+      const accounts = getAccounts();
+      accounts[pendingEmail].code = generateCode();
+      saveAccounts(accounts);
+      showToast("Đã gửi lại mã kích hoạt (bản demo — hiển thị ngay bên dưới).");
+      openVerifyPanel(pendingEmail);
+    });
+
+    loginForm?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!loginForm.checkValidity()) {
+        loginForm.reportValidity();
+        return;
+      }
+      const [emailInput, passInput] = loginForm.querySelectorAll("input");
+      const email = emailInput.value.trim().toLowerCase();
+      const accounts = getAccounts();
+      const acc = accounts[email];
+      if (!acc || acc.password !== passInput.value) {
+        showToast("Email hoặc mật khẩu không đúng.");
+        return;
+      }
+      if (!acc.activated) {
+        showToast("Tài khoản chưa kích hoạt. Vui lòng nhập mã đã gửi tới email.");
+        openVerifyPanel(email);
+        return;
+      }
+      showToast(`Xin chào ${acc.name}! Đăng nhập thành công.`);
+      loginForm.reset();
+    });
+  }
+
   function initNewsletterForm() {
     document.querySelectorAll("[data-newsletter-form]").forEach((form) => {
       form.addEventListener("submit", (e) => {
@@ -466,6 +616,7 @@
     initBlogList();
     initBlogTabs();
     initArticleDetail();
+    initAccount();
     initContactForm();
     initNewsletterForm();
     initReveal();
