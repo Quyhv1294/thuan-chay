@@ -332,6 +332,18 @@
     const reviewCountEl = wrap.querySelector("[data-pd-review-count]");
     if (reviewCountEl) reviewCountEl.textContent = p.reviews;
 
+    // per-product tab content: mô tả / hướng dẫn dùng / đánh giá
+    const fullDescEl = wrap.querySelector("[data-pd-fulldesc]");
+    if (fullDescEl) fullDescEl.textContent = p.fullDesc || p.desc;
+    const usageEl = wrap.querySelector("[data-pd-usage]");
+    if (usageEl) usageEl.textContent = p.usage || "";
+    const reviewsListEl = wrap.querySelector("[data-pd-reviews-list]");
+    if (reviewsListEl) {
+      reviewsListEl.innerHTML = (p.reviewsList || [])
+        .map((r) => `<p>★★★★★ — "${r.text}" — ${r.author}, ${r.location}</p>`)
+        .join("");
+    }
+
     // qty stepper
     const qtyInput = wrap.querySelector(".qty-input input");
     wrap.querySelector("[data-qty-minus]")?.addEventListener("click", () => {

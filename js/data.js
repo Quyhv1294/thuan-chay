@@ -16,7 +16,13 @@ const PRODUCTS = [
     reviews: 214,
     img: "img/Mat tao do tam an/1-mat-tao-do-tam-an.png",
     desc: "Cô đặc từ táo đỏ, kỷ tử và mật mía tự nhiên theo công thức gia truyền hơn 20 năm, hỗ trợ bổ huyết, dưỡng khí, ngủ ngon.",
-    aff: "https://s.shopee.vn/904MlVq6fJ"
+    aff: "https://s.shopee.vn/904MlVq6fJ",
+    fullDesc: "Mật Táo Đỏ Tâm An là sản phẩm chủ lực của Thuần Chay, cô đặc từ táo đỏ, kỷ tử và mật mía nguyên chất theo công thức gia truyền hơn 20 năm. Vị ngọt thanh tự nhiên, không gắt, phù hợp dùng hằng ngày cho cả gia đình.",
+    usage: "Dùng trực tiếp 10–15ml mỗi lần, ngày 1–2 lần vào buổi sáng hoặc trước khi ngủ. Có thể pha cùng nước ấm hoặc nước lọc. Bảo quản nơi khô ráo, thoáng mát, sau khi mở nắp nên dùng trong vòng 30 ngày.",
+    reviewsList: [
+      { text: "Mình uống Mật Táo Đỏ Tâm An được 2 tháng, cảm giác ngủ ngon hơn hẳn, da cũng hồng hào hơn.", author: "Ngọc Hân", location: "TP. Hồ Chí Minh" },
+      { text: "Vị ngọt thanh dễ uống, không gắt như các loại táo đỏ khác mình từng dùng.", author: "Thanh Trúc", location: "Hà Nội" }
+    ]
   },
   {
     id: "mat-tao-do-gung",
@@ -29,7 +35,13 @@ const PRODUCTS = [
     reviews: 96,
     img: "img/Mat tao do tam an/1-mat-tao-do-tam-an-gung-1-300x300.png",
     desc: "Thêm gừng tươi cô đặc giúp làm ấm bụng, hỗ trợ tiêu hoá — lựa chọn yêu thích những ngày trở lạnh.",
-    aff: "https://s.shopee.vn/9V0dMUXwcE"
+    aff: "https://s.shopee.vn/9V0dMUXwcE",
+    fullDesc: "Kết hợp gừng tươi cô đặc cùng táo đỏ, sản phẩm mang vị ấm nhẹ đặc trưng, giúp làm ấm bụng và hỗ trợ tiêu hoá — lựa chọn được yêu thích vào những ngày trời se lạnh.",
+    usage: "Pha 10–15ml cùng 100ml nước ấm, uống vào buổi sáng hoặc sau bữa ăn để hỗ trợ tiêu hoá tốt hơn. Không dùng cho người có tiền sử dị ứng gừng.",
+    reviewsList: [
+      { text: "Vị gừng ấm nhẹ chứ không cay gắt, uống buổi sáng thấy bụng dễ chịu hẳn.", author: "Hoài Thương", location: "Đà Nẵng" },
+      { text: "Mùa lạnh mình hay bị lạnh bụng, từ khi dùng sản phẩm này thấy đỡ hơn nhiều.", author: "Kim Ngân", location: "Cần Thơ" }
+    ]
   },
   {
     id: "mat-tao-do-ich-mau",
@@ -42,7 +54,13 @@ const PRODUCTS = [
     reviews: 158,
     img: "img/Mat tao do tam an/1-mat-tao-do-tam-an-ich-mau-e1780373077714.webp",
     desc: "Kết hợp ích mẫu thảo dược truyền thống, dành riêng cho phụ nữ trong chu kỳ, hỗ trợ điều hoà khí huyết.",
-    aff: "https://s.shopee.vn/1125Eui7kk"
+    aff: "https://s.shopee.vn/1125Eui7kk",
+    fullDesc: "Sản phẩm kết hợp thảo dược ích mẫu truyền thống cùng táo đỏ cô đặc, được nghiên cứu dành riêng cho phụ nữ trong chu kỳ, hỗ trợ điều hoà khí huyết và giảm cảm giác khó chịu những ngày nhạy cảm.",
+    usage: "Dùng 15ml mỗi lần, ngày 2 lần vào các ngày trong chu kỳ hoặc trước chu kỳ 3–5 ngày để đạt hiệu quả tốt nhất. Có thể dùng trực tiếp hoặc pha cùng nước ấm.",
+    reviewsList: [
+      { text: "Mình hay đau bụng những ngày đèn đỏ, dùng sản phẩm này đều đặn thấy nhẹ nhàng hơn hẳn.", author: "Phương Anh", location: "TP. Hồ Chí Minh" },
+      { text: "Vị dễ uống, không có mùi thảo dược nồng như mình lo lắng ban đầu.", author: "Bảo Trâm", location: "Hải Phòng" }
+    ]
   },
   {
     id: "mat-tao-do-hoa-hong",
@@ -55,7 +73,13 @@ const PRODUCTS = [
     reviews: 74,
     img: "img/Mat tao do tam an/1-mat-tao-do-tam-an-hoa-hong-1-300x300.png",
     desc: "Hương hoa hồng dịu nhẹ hoà cùng táo đỏ cô đặc — nuông chiều vị giác, đẹp da từ bên trong.",
-    aff: "https://s.shopee.vn/AUtAYLPkKn"
+    aff: "https://s.shopee.vn/AUtAYLPkKn",
+    fullDesc: "Hương hoa hồng dịu nhẹ hoà quyện cùng táo đỏ cô đặc tạo nên hương vị tinh tế, nhẹ nhàng — không chỉ chăm sóc sức khoẻ mà còn nuông chiều vị giác mỗi ngày.",
+    usage: "Dùng 10–15ml mỗi lần, có thể uống lạnh vào mùa hè hoặc pha ấm vào mùa đông. Thích hợp dùng như một thức uống thư giãn vào buổi tối.",
+    reviewsList: [
+      { text: "Mùi hoa hồng thơm nhẹ chứ không nồng, mình hay uống buổi tối trước khi ngủ.", author: "Yến Nhi", location: "TP. Hồ Chí Minh" },
+      { text: "Đóng chai đẹp, hương vị sang, mua tặng mẹ cũng rất hợp.", author: "Thuỳ Dương", location: "Hà Nội" }
+    ]
   },
   {
     id: "nghe-gao-lut",
@@ -68,7 +92,13 @@ const PRODUCTS = [
     reviews: 132,
     img: "img/Bot dau hat rau cu/1-nghe-gao-lut-1-300x300.png",
     desc: "Nghệ nếp đỏ kết hợp gạo lứt rang, hỗ trợ dạ dày và làm đẹp da, không chất bảo quản.",
-    aff: "https://s.shopee.vn/2VopIKUxkx"
+    aff: "https://s.shopee.vn/2VopIKUxkx",
+    fullDesc: "Nghệ nếp đỏ nguyên chất kết hợp gạo lứt rang thơm, hỗ trợ làm dịu dạ dày và nuôi dưỡng làn da từ bên trong — phù hợp dùng đều đặn mỗi sáng.",
+    usage: "Hoà tan 2 muỗng cà phê (khoảng 10g) với 150ml nước ấm, khuấy đều trước khi uống. Dùng vào buổi sáng trước bữa ăn 30 phút để đạt hiệu quả tốt nhất với dạ dày.",
+    reviewsList: [
+      { text: "Mình bị đau dạ dày, uống nghệ gạo lứt này đều đặn 1 tháng thấy dễ chịu hơn nhiều.", author: "Thu Hà", location: "Hà Nội" },
+      { text: "Mùi thơm gạo lứt rất dễ chịu, không tanh nồng mùi nghệ như một số loại khác.", author: "Anh Thư", location: "TP. Hồ Chí Minh" }
+    ]
   },
   {
     id: "canxi-vegan",
@@ -81,7 +111,13 @@ const PRODUCTS = [
     reviews: 88,
     img: "img/Bot dau hat rau cu/1-canxi-vegan-1.png",
     desc: "Canxi thực vật chiết xuất từ rong biển, mè đen và hạt óc chó — dễ hấp thu, thân thiện hệ tiêu hoá.",
-    aff: "https://s.shopee.vn/9pdTlAEUZq"
+    aff: "https://s.shopee.vn/9pdTlAEUZq",
+    fullDesc: "Canxi thực vật chiết xuất từ rong biển, mè đen và hạt óc chó, dễ hấp thu và thân thiện với hệ tiêu hoá — lựa chọn phù hợp cho người ăn chay cần bổ sung canxi tự nhiên hằng ngày.",
+    usage: "Hoà 1–2 muỗng cà phê với 150–200ml nước ấm hoặc sữa hạt, uống vào buổi sáng hoặc tối trước khi ngủ. Nên dùng đều đặn ít nhất 4–6 tuần để cảm nhận hiệu quả rõ rệt.",
+    reviewsList: [
+      { text: "Mình ăn chay trường nên hay lo thiếu canxi, dùng sản phẩm này thấy yên tâm hơn hẳn.", author: "Diệu Linh", location: "TP. Hồ Chí Minh" },
+      { text: "Không bị tanh mùi rong biển như mình lo, pha với sữa hạt uống rất ngon.", author: "Gia Hân", location: "Nha Trang" }
+    ]
   },
   {
     id: "bot-ngu-sen",
@@ -94,7 +130,13 @@ const PRODUCTS = [
     reviews: 61,
     img: "img/Bot dau hat rau cu/1-bot-ngu-sen-1-300x300.png",
     desc: "Năm loại hạt sen, đậu và ngũ cốc nguyên bản xay mịn, thanh lọc cơ thể, dễ ngủ, đẹp da.",
-    aff: "https://s.shopee.vn/qif2pc8n2"
+    aff: "https://s.shopee.vn/qif2pc8n2",
+    fullDesc: "Năm loại hạt sen, đậu và ngũ cốc nguyên bản được xay mịn, hỗ trợ thanh lọc cơ thể, dễ ngủ và làm đẹp da — món ăn nhẹ lành mạnh cho cả gia đình.",
+    usage: "Hoà 2–3 muỗng canh với 200ml nước ấm hoặc nấu cùng nước sôi thành cháo sánh mịn. Có thể dùng làm bữa sáng hoặc bữa phụ buổi tối để hỗ trợ giấc ngủ ngon hơn.",
+    reviewsList: [
+      { text: "Mình hay mất ngủ, ăn bột ngũ sen buổi tối thấy ngủ sâu hơn hẳn.", author: "Cẩm Tú", location: "Huế" },
+      { text: "Vị bùi thơm hạt sen, nấu sánh mịn, cả nhà mình ai cũng thích.", author: "Hồng Nhung", location: "TP. Hồ Chí Minh" }
+    ]
   },
   {
     id: "vegan-protein",
@@ -107,7 +149,13 @@ const PRODUCTS = [
     reviews: 201,
     img: "img/Bot dau hat rau cu/1-vegan-protein-1-300x300.png",
     desc: "Đạm thực vật từ đậu vàng, đậu xanh và hạt bí, không đậu nành, bổ sung dinh dưỡng toàn diện.",
-    aff: "https://s.shopee.vn/30lNLqI1ye"
+    aff: "https://s.shopee.vn/30lNLqI1ye",
+    fullDesc: "Đạm thực vật chiết xuất từ đậu vàng, đậu xanh và hạt bí, không chứa đậu nành, bổ sung dinh dưỡng toàn diện cho người tập luyện thể thao hoặc cần tăng cường năng lượng.",
+    usage: "Pha 1 muỗng gạt (khoảng 30g) với 250–300ml nước hoặc sữa hạt, lắc đều. Dùng sau khi tập luyện 30 phút hoặc thay thế bữa phụ giàu đạm trong ngày.",
+    reviewsList: [
+      { text: "Mình tập gym ăn chay trường, dùng Vegan Protein này thấy phục hồi cơ tốt, không bị tanh mùi đậu.", author: "Anh Tuấn", location: "Đà Nẵng" },
+      { text: "Pha rất dễ tan, không bị vón cục như vài loại protein thực vật mình từng thử.", author: "Hải Đăng", location: "TP. Hồ Chí Minh" }
+    ]
   },
   {
     id: "bot-nem-rau-cu-250g",
@@ -120,7 +168,13 @@ const PRODUCTS = [
     reviews: 47,
     img: "img/Bot nem thuan chay/1-bot-nem-rau-cu-thuan-chay-250g-1-300x300.png",
     desc: "Gói nhỏ 250g tiện mang theo, hỗn hợp rau củ sấy lạnh nghiền mịn, đậm vị tự nhiên, không bột ngọt, không chất bảo quản.",
-    aff: "https://s.shopee.vn/qgbMANNHU"
+    aff: "https://s.shopee.vn/qgbMANNHU",
+    fullDesc: "Gói nhỏ 250g tiện lợi, hỗn hợp rau củ sấy lạnh nghiền mịn giữ trọn vị ngọt tự nhiên — giải pháp thay thế bột ngọt an toàn cho gian bếp gia đình, đặc biệt phù hợp mang theo khi đi xa.",
+    usage: "Nêm 1–2 muỗng cà phê vào món canh, xào hoặc kho tuỳ khẩu vị, nêm nếm lại trước khi tắt bếp. Bảo quản nơi khô ráo, đóng kín nắp sau mỗi lần dùng để giữ độ tươi ngon.",
+    reviewsList: [
+      { text: "Gói nhỏ gọn tiện mang đi công tác, nêm canh đậm đà mà không cần bột ngọt.", author: "Bích Ngọc", location: "Cần Thơ" },
+      { text: "Con nít nhà mình ăn cũng yên tâm, vị ngọt tự nhiên chứ không gắt hoá chất.", author: "Minh Thư", location: "Hà Nội" }
+    ]
   },
   {
     id: "bot-nem-rau-cu",
@@ -133,7 +187,13 @@ const PRODUCTS = [
     reviews: 63,
     img: "img/Bot nem thuan chay/1-bot-nem-rau-cu-thuan-chay-500g-1.png",
     desc: "Hỗn hợp rau củ sấy khô nghiền mịn, thay thế bột ngọt trong gian bếp gia đình bạn.",
-    aff: "https://s.shopee.vn/qgbMANNHU"
+    aff: "https://s.shopee.vn/qgbMANNHU",
+    fullDesc: "Hũ lớn 500g dùng được lâu dài, hỗn hợp rau củ sấy khô nghiền mịn từ cà rốt, bí đỏ, củ dền và rau xanh — thay thế hoàn toàn bột ngọt trong các món canh, xào, kho hằng ngày.",
+    usage: "Nêm 1–2 muỗng cà phê cho mỗi phần ăn 2–3 người, có thể gia giảm tuỳ khẩu vị. Dùng được cho cả món chay và món mặn, phù hợp nấu ăn cho trẻ nhỏ và người ăn kiêng muối.",
+    reviewsList: [
+      { text: "Nhà mình chuyển hẳn sang dùng bột nêm này thay bột ngọt, nấu món gì cũng đậm đà tự nhiên.", author: "Thu Trang", location: "TP. Hồ Chí Minh" },
+      { text: "Hũ to dùng được cả tháng, giá hợp lý mà chất lượng ổn định.", author: "Văn Hùng", location: "Biên Hoà" }
+    ]
   },
   {
     id: "mat-tao-do-nhan-sam",
@@ -146,7 +206,13 @@ const PRODUCTS = [
     reviews: 119,
     img: "img/Mat tao do tam an/1-mat-tao-do-tam-an-dang-sam-1-300x300.png",
     desc: "Nhân sâm quý kết hợp táo đỏ cô đặc, bồi bổ khí huyết cho người mới ốm dậy, người cao tuổi.",
-    aff: "https://s.shopee.vn/50YE0CBXRz"
+    aff: "https://s.shopee.vn/50YE0CBXRz",
+    fullDesc: "Kết hợp nhân sâm quý cùng táo đỏ cô đặc, sản phẩm hướng đến người mới ốm dậy, người cao tuổi hoặc người cần bồi bổ khí huyết sau thời gian làm việc căng thẳng.",
+    usage: "Dùng 15–20ml mỗi lần, ngày 1 lần vào buổi sáng khi bụng đói để cơ thể hấp thu dưỡng chất tốt nhất. Người huyết áp cao nên tham khảo ý kiến bác sĩ trước khi dùng.",
+    reviewsList: [
+      { text: "Mua cho ba mẹ dùng sau đợt ốm, cả hai đều khen thấy khoẻ hơn, ăn ngủ tốt hơn.", author: "Minh Đức", location: "Cần Thơ" },
+      { text: "Vị đậm hơn các loại mật táo đỏ khác, uống vào thấy ấm người.", author: "Quốc Bảo", location: "Đà Nẵng" }
+    ]
   },
   {
     id: "ngu-coc-thuc-duong",
@@ -159,7 +225,13 @@ const PRODUCTS = [
     reviews: 39,
     img: "img/Bot dau hat rau cu/1-ngu-coc-thuc-duong-1-300x300.png",
     desc: "Hỗn hợp ngũ cốc, hạt và rau củ nguyên bản theo phương pháp thực dưỡng, thanh lọc, tăng đề kháng, dễ pha cùng nước hoặc sữa hạt.",
-    aff: "https://s.shopee.vn/7VFYz3v5LL"
+    aff: "https://s.shopee.vn/7VFYz3v5LL",
+    fullDesc: "Hỗn hợp ngũ cốc, hạt và rau củ nguyên bản theo phương pháp thực dưỡng truyền thống, không chất bảo quản, phù hợp cho bữa sáng nhanh gọn hoặc bữa phụ lành mạnh trong ngày.",
+    usage: "Hoà 3 muỗng canh với 200ml nước ấm hoặc sữa hạt, khuấy đều đến khi sánh mịn. Có thể thêm hạt chia hoặc trái cây tươi để tăng hương vị.",
+    reviewsList: [
+      { text: "Ăn sáng bằng ngũ cốc này thấy no lâu, không bị đói giữa buổi như trước.", author: "Thảo Vy", location: "Hà Nội" },
+      { text: "Vị ngũ cốc thơm bùi tự nhiên, không ngọt gắt như các loại đóng gói công nghiệp.", author: "Đình Phong", location: "TP. Hồ Chí Minh" }
+    ]
   }
 ];
 
